@@ -4,6 +4,7 @@ import org.example.models.CustomEntity;
 
 import java.util.Comparator;
 
+// Comparator for field age
 public class AgeComparator implements Comparator<CustomEntity> {
 
     @Override

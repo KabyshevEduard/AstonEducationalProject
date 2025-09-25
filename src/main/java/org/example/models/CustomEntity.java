@@ -1,5 +1,6 @@
 package org.example.models;
 
+// Abstract class for objects with builder pattern
 public abstract class CustomEntity {
 
     private int id;

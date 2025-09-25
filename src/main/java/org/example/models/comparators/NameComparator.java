@@ -4,6 +4,7 @@ import org.example.models.CustomEntity;
 
 import java.util.Comparator;
 
+// Comparator for field name
 public class NameComparator implements Comparator<CustomEntity> {
 
     @Override

@@ -4,15 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d08b4cc-d5c4-43ce-aa9a-25b1e2406bfc" name="Changes" comment="Base structure">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/models/CustomEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/models/comparators/AgeComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/models/comparators/NameComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/models/comparators/SurnameComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/models/parser/ParseUtil.java" afterDir="false" />
+    <list default="true" id="2d08b4cc-d5c4-43ce-aa9a-25b1e2406bfc" name="Changes" comment="Do block 3 without extra tasks&#10;- Add custom class&#10;- Add comparators&#10;- Add parse util">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/collection/MyArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/collection/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MyArrayListTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ParseUtilTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testData.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/CustomEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/CustomEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/comparators/AgeComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/comparators/AgeComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/comparators/NameComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/comparators/NameComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/comparators/SurnameComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/comparators/SurnameComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/parser/ParseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/parser/ParseUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +66,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.MyArrayListTests.CountElementTest.executor": "Run",
+    "JUnit.MyArrayListTests.countElementTest.executor": "Run",
+    "JUnit.MyArrayListTests.getTest.executor": "Run",
+    "JUnit.ParseUtilTests.parseFileTest.executor": "Run",
+    "JUnit.ParseUtilTests.parseLineTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -74,6 +84,67 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.MyArrayListTests.addTest">
+    <configuration name="MyArrayListTests.CountElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AstonProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
+      <option name="METHOD_NAME" value="CountElementTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyArrayListTests.addTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AstonProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
+      <option name="METHOD_NAME" value="addTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyArrayListTests.countElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AstonProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
+      <option name="METHOD_NAME" value="countElementTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyArrayListTests.getTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AstonProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
+      <option name="METHOD_NAME" value="getTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParseUtilTests.parseFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AstonProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ParseUtilTests" />
+      <option name="METHOD_NAME" value="parseFileTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyArrayListTests.addTest" />
+        <item itemvalue="JUnit.MyArrayListTests.countElementTest" />
+        <item itemvalue="JUnit.MyArrayListTests.getTest" />
+        <item itemvalue="JUnit.MyArrayListTests.CountElementTest" />
+        <item itemvalue="JUnit.ParseUtilTests.parseFileTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -89,7 +160,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758714806928</updated>
-      <workItem from="1758714807951" duration="8308000" />
+      <workItem from="1758714807951" duration="24541000" />
     </task>
     <task id="LOCAL-00001" summary="Base">
       <option name="closed" value="true" />
@@ -107,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758715280575</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Do block 3 without extra tasks&#10;- Add custom class&#10;- Add comparators&#10;- Add parse util">
+      <option name="closed" value="true" />
+      <created>1758742306660</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758742306660</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +195,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Base" />
     <MESSAGE value="Base structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Base structure" />
+    <MESSAGE value="Do block 3 without extra tasks&#10;- Add custom class&#10;- Add comparators&#10;- Add parse util" />
+    <option name="LAST_COMMIT_MESSAGE" value="Do block 3 without extra tasks&#10;- Add custom class&#10;- Add comparators&#10;- Add parse util" />
   </component>
 </project>

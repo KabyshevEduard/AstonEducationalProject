@@ -91,6 +91,7 @@ public class MyArrayList<T> implements MyList<T> {
     }
 
     // Extra task 4
+    @Override
     public long countElement(T item, int nThreads) {
         int pivot = (int) round((double) currentSize/nThreads);
         ExecutorService executor = Executors.newFixedThreadPool(nThreads);

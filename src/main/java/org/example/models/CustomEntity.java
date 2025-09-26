@@ -31,19 +31,20 @@ public abstract class CustomEntity {
         return age;
     }
 
+    // Builder pattern
     public static class Builder {
         private int id;
         private String name;
         private String surname;
         private int age;
 
-        public CustomEntity.Builder id(int id) throws IllegalArgumentException {
+        public CustomEntity.Builder id(int id) {
             this.id = id;
             return this;
         }
 
         public  CustomEntity.Builder name(String name) throws IllegalArgumentException {
-            if (name == null || name.isEmpty() || name.length() < 3 || name.length() > 50) {
+            if (name == null || name.length() < 3 || name.length() > 50) {
                 throw new IllegalArgumentException("Невалидное имя");
             }
             this.name = name;
@@ -51,7 +52,7 @@ public abstract class CustomEntity {
         }
 
         public  CustomEntity.Builder surname(String surname) throws IllegalArgumentException {
-            if (surname == null || surname.isEmpty() || surname.length() < 3 || surname.length() > 50) {
+            if (surname == null || surname.length() < 3 || surname.length() > 50) {
                 throw new IllegalArgumentException("Невалидная фамилия");
             }
             this.surname = surname;

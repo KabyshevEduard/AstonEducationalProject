@@ -90,6 +90,11 @@ public class MyArrayList<T> implements MyList<T> {
         }
     }
 
+    @Override
+    public T[] getArray() {
+        return (T[]) bucket;
+    }
+
     // Extra task 4
     @Override
     public long countElement(T item, int nThreads) {

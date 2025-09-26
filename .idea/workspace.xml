@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d08b4cc-d5c4-43ce-aa9a-25b1e2406bfc" name="Changes" comment="Correct MyList">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/CustomEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/CustomEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/parser/ParseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/parser/ParseUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/collection/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/collection/MyArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/collection/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/collection/MyList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Correct-Validators" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,6 +57,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "JUnit.MyArrayListTests.CountElementTest.executor": "Run",
+    "JUnit.MyArrayListTests.addTest.executor": "Run",
     "JUnit.MyArrayListTests.countElementTest.executor": "Run",
     "JUnit.MyArrayListTests.getTest.executor": "Run",
     "JUnit.ParseUtilTests.parseFileTest.executor": "Run",
@@ -64,7 +65,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Correct-Validators",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,7 +75,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.MyArrayListTests.addTest">
+  <component name="RunManager">
     <configuration name="MyArrayListTests.CountElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AstonProject" />
       <option name="PACKAGE_NAME" value="" />
@@ -128,10 +129,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MyArrayListTests.addTest" />
-        <item itemvalue="JUnit.MyArrayListTests.countElementTest" />
-        <item itemvalue="JUnit.MyArrayListTests.getTest" />
-        <item itemvalue="JUnit.MyArrayListTests.CountElementTest" />
         <item itemvalue="JUnit.ParseUtilTests.parseFileTest" />
+        <item itemvalue="JUnit.MyArrayListTests.getTest" />
+        <item itemvalue="JUnit.MyArrayListTests.countElementTest" />
+        <item itemvalue="JUnit.MyArrayListTests.CountElementTest" />
       </list>
     </recent_temporary>
   </component>

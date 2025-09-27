@@ -1,5 +1,5 @@
 package sort;
 
-public interface Sort<T extends Comparable<T>> {
+public interface Sort<T> {
     void sort(T[] array);
 }

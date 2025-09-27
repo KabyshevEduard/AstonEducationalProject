@@ -1,7 +1,15 @@
 package sort;
 
-public class QuickSort<T extends Comparable<T>> implements Sort<T> {
-  
+import java.util.Comparator;
+
+public class QuickSort<T> implements Sort<T> {
+
+    private final Comparator<? super T> comparator;
+
+    public QuickSort(Comparator<? super T> comparator) {
+        this.comparator = comparator;
+    }
+
     @Override
     public void sort(T[] array) {
         if (array == null || array.length < 2) return;
@@ -24,7 +32,7 @@ public class QuickSort<T extends Comparable<T>> implements Sort<T> {
 
         int i = low;
         for (int j = low; j < high; j++) {
-            if (array[j].compareTo(pivot) <= 0) swap(array, i++, j);
+            if (comparator.compare(array[j], pivot) <= 0) swap(array, i++, j);
         }
 
         swap(array, i, high);

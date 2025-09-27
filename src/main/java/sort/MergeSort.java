@@ -1,8 +1,15 @@
 package sort;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
-public class MergeSort<T extends Comparable<T>> implements Sort<T> {
+public class MergeSort<T> implements Sort<T> {
+
+    private final Comparator<? super T> comparator;
+
+    public MergeSort(Comparator<? super T> comparator) {
+        this.comparator = comparator;
+    }
 
     @Override
     public void sort(T[] array) {
@@ -28,11 +35,11 @@ public class MergeSort<T extends Comparable<T>> implements Sort<T> {
 
     private T[] mergeArray(T[] arrayA, T[] arrayB) {
         @SuppressWarnings("unchecked")
-        T[] arrayC = (T[]) new Comparable[arrayA.length + arrayB.length];
+        T[] arrayC = (T[]) new Object[arrayA.length + arrayB.length];
         int positionA = 0, positionB = 0, index = 0;
 
         while (positionA < arrayA.length && positionB < arrayB.length) {
-            if (arrayA[positionA].compareTo(arrayB[positionB]) <= 0) {
+            if (comparator.compare(arrayA[positionA], arrayB[positionB]) <= 0) {
                 arrayC[index++] = arrayA[positionA++];
             } else {
                 arrayC[index++] = arrayB[positionB++];

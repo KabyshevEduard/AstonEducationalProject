@@ -2,44 +2,41 @@ package sort;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Comparator;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-public class MergeSortTest {
-
-    private final Sort<Integer> sorter = new MergeSort<>();
+class MergeSortTest {
 
     @Test
-    void testEmptyArray() {
-        Integer[] arr = {};
-        sorter.sort(arr);
-        assertArrayEquals(new Integer[]{}, arr);
+    void testSortIntegers() {
+        Integer[] arrayA = {9, 4, 6, 2, 7};
+        Sort<Integer> sorter = new MergeSort<>(Comparator.naturalOrder());
+        sorter.sort(arrayA);
+        assertArrayEquals(new Integer[]{2, 4, 6, 7, 9}, arrayA);
     }
 
     @Test
-    void testSingleElement() {
-        Integer[] arr = {42};
-        sorter.sort(arr);
-        assertArrayEquals(new Integer[]{42}, arr);
+    void testSortStrings() {
+        String[] arrayA = {"dog", "cat", "elephant", "bee"};
+        Sort<String> sorter = new MergeSort<>(Comparator.naturalOrder());
+        sorter.sort(arrayA);
+        assertArrayEquals(new String[]{"bee", "cat", "dog", "elephant"}, arrayA);
     }
 
     @Test
-    void testSortedArray() {
-        Integer[] arr = {1, 2, 3, 4, 5};
-        sorter.sort(arr);
-        assertArrayEquals(new Integer[]{1, 2, 3, 4, 5}, arr);
+    void testSortEmptyArray() {
+        Integer[] arrayA = {};
+        Sort<Integer> sorter = new MergeSort<>(Comparator.naturalOrder());
+        sorter.sort(arrayA);
+        assertArrayEquals(new Integer[]{}, arrayA);
     }
 
     @Test
-    void testReverseArray() {
-        Integer[] arr = {5, 4, 3, 2, 1};
-        sorter.sort(arr);
-        assertArrayEquals(new Integer[]{1, 2, 3, 4, 5}, arr);
-    }
-
-    @Test
-    void testRandomArray() {
-        Integer[] arr = {3, 1, 4, 1, 5, 9, 2};
-        sorter.sort(arr);
-        assertArrayEquals(new Integer[]{1, 1, 2, 3, 4, 5, 9}, arr);
+    void testSortSingleElement() {
+        Integer[] arrayA = {99};
+        Sort<Integer> sorter = new MergeSort<>(Comparator.naturalOrder());
+        sorter.sort(arrayA);
+        assertArrayEquals(new Integer[]{99}, arrayA);
     }
 }

@@ -3,6 +3,8 @@ package org.example.sort;
 import java.util.Arrays;
 import java.util.Comparator;
 
+import org.example.collection.*;
+
 public class MergeSort<T> implements Sort<T> {
 
     private final Comparator<? super T> comparator;
@@ -18,6 +20,11 @@ public class MergeSort<T> implements Sort<T> {
         T[] sorted = mergeSort(array);
         System.arraycopy(sorted, 0, array, 0, array.length);
     }
+
+    public void sort(MyArrayList<T> myArrayList) {
+        sort(myArrayList.getArray());
+    }
+
 
     private T[] mergeSort(T[] arrayA) {
         if (arrayA == null) return null;

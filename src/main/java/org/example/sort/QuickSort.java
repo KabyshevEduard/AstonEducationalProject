@@ -2,6 +2,8 @@ package org.example.sort;
 
 import java.util.Comparator;
 
+import org.example.collection.*;
+
 public class QuickSort<T> implements Sort<T> {
 
     private final Comparator<? super T> comparator;
@@ -14,6 +16,10 @@ public class QuickSort<T> implements Sort<T> {
     public void sort(T[] array) {
         if (array == null || array.length < 2) return;
         quickSort(array, 0, array.length - 1);
+    }
+
+    public void sort(MyArrayList<T> myArrayList) {
+        sort(myArrayList.getArray());
     }
 
     private void quickSort(T[] array, int low, int high) {

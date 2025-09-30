@@ -9,6 +9,6 @@ public class NameComparator implements Comparator<CustomEntity> {
 
     @Override
     public int compare(CustomEntity o1, CustomEntity o2) {
-        return o1.getSurname().compareTo(o2.getSurname());
+        return o1.getName().compareTo(o2.getName());
     }
 }

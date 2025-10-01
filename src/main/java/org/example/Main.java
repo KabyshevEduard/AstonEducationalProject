@@ -5,13 +5,16 @@ import org.example.models.CustomEntity;
 import org.example.models.comparators.AgeComparator;
 import org.example.models.comparators.NameComparator;
 import org.example.models.comparators.SurnameComparator;
-import org.example.states.inpStates.FileInputState;
-import org.example.states.inpStates.InputStateExecuter;
-import org.example.states.inpStates.RandomInputState;
-import org.example.states.inpStates.WriteInputState;
+import org.example.states.inpStates.*;
 import org.example.states.outStates.ExitState;
+import org.example.states.outStates.firstStage.FirstStageExecuter;
+import org.example.states.outStates.firstStage.SortStateImp;
+import org.example.states.outStates.secondStage.CountSearchStateImp;
+import org.example.states.outStates.secondStage.SecondStageExecuter;
+import org.example.states.outStates.secondStage.WriteStateImp;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Comparator;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -41,58 +44,69 @@ public class Main {
             }
 
             if (choice == 1) {
-                inputStateExecuter.setState(new WriteInputState());
-
-                tryInput1:
-                while (true) {
-                    try {
-                        myList = inputStateExecuter.executeState();
-                        break tryInput1;
-                    }
-                    catch (FileNotFoundException | IllegalArgumentException | InputMismatchException e) {
-                        System.out.println("Вы ввели не то, что ожидалось");
-                        System.out.println("Введите заного");
-                        continue tryInput1;
-                    }
-                }
-                // Actions
+                CustomEntity element = getCustomEntity(new WriteInputState());
+                pipeline2(element);
             }
 
             if (choice == 2) {
-                inputStateExecuter.setState(new FileInputState());
-
-                tryInput2:
-                while (true) {
-                    try {
-                        myList = inputStateExecuter.executeState();
-                        break tryInput2;
-                    }
-                    catch (FileNotFoundException | IllegalArgumentException | InputMismatchException e) {
-                        System.out.println("Вы ввели не то, что ожидалось");
-                        System.out.println("Введите заного");
-                        continue tryInput2;
-                    }
-                }
-                // Actions
+                CustomEntity element = getCustomEntity(new FileInputState());
+                pipeline2(element);
             }
 
             if (choice == 3) {
-                inputStateExecuter.setState(new RandomInputState());
-
-                tryInput3:
-                while (true) {
-                    try {
-                        myList = inputStateExecuter.executeState();
-                        break tryInput3;
-                    }
-                    catch (FileNotFoundException | IllegalArgumentException | InputMismatchException e) {
-                        System.out.println("Вы ввели не то, что ожидалось");
-                        System.out.println("Введите заного");
-                        continue tryInput3;
-                    }
-                    // Actions
-                }
+                CustomEntity element = getCustomEntity(new RandomInputState());
+                pipeline2(element);
             }
+        }
+    }
+
+    private static CustomEntity getCustomEntity(InputState state) {
+        inputStateExecuter.setState(state);
+
+        tryInput1:
+        while (true) {
+            try {
+                myList = inputStateExecuter.executeState();
+                break tryInput1;
+            } catch (FileNotFoundException | IllegalArgumentException | InputMismatchException e) {
+                System.out.println("Вы ввели не то, что ожидалось");
+                System.out.println("Введите заного");
+                continue tryInput1;
+            }
+        }
+
+        inputStateExecuter.setState(new EntityInputState());
+        CustomEntity el = null;
+
+        tryInput2:
+        while (true) {
+            try {
+                MyList<CustomEntity> element = inputStateExecuter.executeState();
+                el = element.get(0);
+                break tryInput2;
+            } catch (FileNotFoundException | IllegalArgumentException | InputMismatchException e) {
+                System.out.println("Вы ввели не то, что ожидалось");
+                System.out.println("Введите заного");
+                continue tryInput2;
+            }
+        }
+
+        return el;
+    }
+
+    private static void pipeline2(CustomEntity element) {
+        FirstStageExecuter<CustomEntity> firstStageExecuter = new FirstStageExecuter<CustomEntity>(new SortStateImp<CustomEntity>());
+
+        SecondStageExecuter<CustomEntity> secondStageExecuter = new SecondStageExecuter<CustomEntity>(
+                new WriteStateImp<CustomEntity>(),
+                new CountSearchStateImp<CustomEntity>()
+        );
+        myList = firstStageExecuter.executeStates(myList);
+
+        try {
+            secondStageExecuter.executeStates(myList, element);
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
         }
     }
 }

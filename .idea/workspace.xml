@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d08b4cc-d5c4-43ce-aa9a-25b1e2406bfc" name="Changes" comment="Add getArray" />
+    <list default="true" id="2d08b4cc-d5c4-43ce-aa9a-25b1e2406bfc" name="Changes" comment="Correct name comparator">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/states/inpStates/EntityInputState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/states/inpStates/FileInputState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/states/inpStates/InputState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/states/inpStates/InputStateExecuter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/states/inpStates/RandomInputState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/states/inpStates/WriteInputState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/ExitState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/firstStage/FirstStageExecuter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/firstStage/SortState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/firstStage/SortStateImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/CountSearchState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/CountSearchStateImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/SecondStageExecuter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/WriteState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/WriteStateImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +39,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Correct-Validators" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,7 +79,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "DoStates",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -189,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758894944849</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Correct name comparator">
+      <option name="closed" value="true" />
+      <created>1759213020942</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1759213020942</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +250,7 @@
     <MESSAGE value="Do block 3 without extra tasks&#10;- Add custom class&#10;- Add comparators&#10;- Add parse util" />
     <MESSAGE value="Correct MyList" />
     <MESSAGE value="Add getArray" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add getArray" />
+    <MESSAGE value="Correct name comparator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct name comparator" />
   </component>
 </project>

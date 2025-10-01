@@ -12,5 +12,7 @@ public interface MyList<T> {
 
     int getLength();
 
+    T[] getArray();
+
     long countElement(T item, int nThreads);
 }

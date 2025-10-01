@@ -19,7 +19,7 @@ public class MyArrayList<T> implements MyList<T> {
     }
 
     public MyArrayList(T... elements) {
-        size = elements.length + (int) (0.7 * elements.length);
+        size = elements.length;
         currentSize = elements.length;
         bucket = new Object[size];
         for (int i = 0; i < elements.length; i++) {

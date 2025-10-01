@@ -33,7 +33,7 @@ public class Main {
     public static void main(String[] args) {
         while (true) {
             System.out.println("Выберите действие");
-            System.out.println("1. Ввести массив\n2. Выбрать файл с массивом\n3. Случайно инициализировать массив\n4. Выход");
+            System.out.println("1. Ввести массив\n2. Выбрать файл с массивом\n3. Случайно инициализировать массив\n4. Выход\n5. Дополнительное задание: осториторовать по четным и нечетным");
             System.out.print("Действие: ");
             Scanner scanner = new Scanner(System.in);
             int choice = scanner.nextInt();
@@ -44,23 +44,27 @@ public class Main {
             }
 
             if (choice == 1) {
-                CustomEntity element = getCustomEntity(new WriteInputState());
-                pipeline2(element);
+                getCustomEntity(new WriteInputState());
+                pipeline2();
             }
 
             if (choice == 2) {
-                CustomEntity element = getCustomEntity(new FileInputState());
-                pipeline2(element);
+                getCustomEntity(new FileInputState());
+                pipeline2();
             }
 
             if (choice == 3) {
-                CustomEntity element = getCustomEntity(new RandomInputState());
-                pipeline2(element);
+                getCustomEntity(new RandomInputState());
+                pipeline2();
+            }
+
+            if (choice == 5) {
+
             }
         }
     }
 
-    private static CustomEntity getCustomEntity(InputState state) {
+    private static void getCustomEntity(InputState state) {
         inputStateExecuter.setState(state);
 
         tryInput1:
@@ -74,7 +78,9 @@ public class Main {
                 continue tryInput1;
             }
         }
+    }
 
+    private static void pipeline2() {
         inputStateExecuter.setState(new EntityInputState());
         CustomEntity el = null;
 
@@ -91,10 +97,6 @@ public class Main {
             }
         }
 
-        return el;
-    }
-
-    private static void pipeline2(CustomEntity element) {
         FirstStageExecuter<CustomEntity> firstStageExecuter = new FirstStageExecuter<CustomEntity>(new SortStateImp<CustomEntity>());
 
         SecondStageExecuter<CustomEntity> secondStageExecuter = new SecondStageExecuter<CustomEntity>(
@@ -104,7 +106,7 @@ public class Main {
         myList = firstStageExecuter.executeStates(myList);
 
         try {
-            secondStageExecuter.executeStates(myList, element);
+            secondStageExecuter.executeStates(myList, el);
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }

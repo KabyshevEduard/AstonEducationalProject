@@ -30,7 +30,7 @@ public class BinarySearch<T> {
         return -1;
     }
 
-    public int search(MyArrayList<T> arrayList, T needle) {
-        return search(arrayList.toArray(), needle);
+    public int search(MyList<T> myList, T needle) {
+        return search(myList.toArray(), needle);
     }
 }

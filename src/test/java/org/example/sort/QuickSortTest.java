@@ -40,6 +40,20 @@ class QuickSortTest {
     }
 
     @Test
+    void testSortEvenByAge() {
+        QuickSort<CustomEntity> quickSort = new QuickSort<>(new AgeComparator());
+        quickSort.sortEven(list, CustomEntity::getAge);
+
+        assertEquals(21, list.get(0).getAge());
+        assertEquals(14, list.get(1).getAge());
+        assertEquals(23, list.get(2).getAge());
+        assertEquals(19, list.get(3).getAge());
+        assertEquals(18, list.get(4).getAge());
+        assertEquals(40, list.get(5).getAge());
+        assertEquals(21, list.get(6).getAge());
+    }
+
+    @Test
     void testSortBySurname() {
         QuickSort<CustomEntity> quickSort = new QuickSort<>(new SurnameComparator());
         quickSort.sort(list);

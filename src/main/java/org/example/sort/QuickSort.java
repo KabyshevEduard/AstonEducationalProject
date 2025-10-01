@@ -5,6 +5,7 @@ import org.example.collection.*;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.concurrent.*;
+import java.util.function.ToIntFunction;
 
 public class QuickSort<T> implements Sort<T> {
 
@@ -27,10 +28,56 @@ public class QuickSort<T> implements Sort<T> {
         }
     }
 
-    public void sort(MyArrayList<T> myArrayList) {
-        T[] array = Arrays.copyOf(myArrayList.getArray(), myArrayList.getLength());
+    public void sort(MyList<T> myList) {
+        T[] array = Arrays.copyOf(myList.getArray(), myList.getLength());
         sort(array);
-        System.arraycopy(array, 0, myArrayList.getArray(), 0, array.length);
+        System.arraycopy(array, 0, myList.getArray(), 0, array.length);
+    }
+
+    @Override
+    public void sortEven(T[] array, ToIntFunction<T> numericField) {
+        if (array == null || array.length < 2) return;
+
+        T[] evenElements = getEvenElements(array, numericField);
+
+        ExecutorService executor = Executors.newFixedThreadPool(Math.max(2, Runtime.getRuntime().availableProcessors() / 2));
+
+        try {
+            quickSort(evenElements, 0, evenElements.length - 1, executor);
+            int evenIndex = 0;
+
+            for (int i = 0; i < array.length; i++) {
+                if (numericField.applyAsInt(array[i]) % 2 == 0) {
+                    array[i] = evenElements[evenIndex++];
+                }
+            }
+
+        } finally {
+            executor.shutdown();
+        }
+    }
+
+    public void sortEven(MyList<T> myList, ToIntFunction<T> numericField) {
+        T[] array = Arrays.copyOf(myList.getArray(), myList.getLength());
+        sortEven(array, numericField);
+        System.arraycopy(array, 0, myList.getArray(), 0, array.length);
+    }
+
+    @SuppressWarnings("unchecked")
+    private T[] getEvenElements(T[] array, ToIntFunction<T> numericField) {
+        T[] evenElements = (T[]) new Object[array.length];
+
+        int count = 0;
+
+        for (T element : array) {
+            if (numericField.applyAsInt(element) % 2 == 0) {
+                evenElements[count++] = element;
+            }
+        }
+
+        evenElements = Arrays.copyOf(evenElements, count);
+
+        return evenElements;
     }
 
     private void quickSort(T[] array, int low, int high, ExecutorService executor) {
@@ -57,8 +104,11 @@ public class QuickSort<T> implements Sort<T> {
         swap(array, pivotIndex, high);
 
         int i = low;
+
         for (int j = low; j < high; j++) {
-            if (comparator.compare(array[j], pivot) <= 0) swap(array, i++, j);
+            if (comparator.compare(array[j], pivot) <= 0) {
+                swap(array, i++, j);
+            }
         }
 
         swap(array, i, high);

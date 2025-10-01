@@ -96,6 +96,7 @@ public class MyArrayList<T> implements MyList<T> {
     }
 
     @SuppressWarnings("unchecked")
+    @Override
     public T[] toArray() {
         return (T[]) Arrays.copyOf(bucket, currentSize, bucket.getClass());
     }

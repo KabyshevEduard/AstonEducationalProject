@@ -1,9 +1,10 @@
 package org.example.sort;
 
+import org.example.collection.*;
+
 import java.util.Arrays;
 import java.util.Comparator;
-
-import org.example.collection.*;
+import java.util.concurrent.*;
 
 public class MergeSort<T> implements Sort<T> {
 
@@ -17,27 +18,46 @@ public class MergeSort<T> implements Sort<T> {
     public void sort(T[] array) {
         if (array == null || array.length < 2) return;
 
-        T[] sorted = mergeSort(array);
-        System.arraycopy(sorted, 0, array, 0, array.length);
+        ExecutorService executor = Executors.newFixedThreadPool(Math.max(2, Runtime.getRuntime().availableProcessors() / 2));
+
+        try {
+            T[] sorted = mergeSort(array, executor);
+            System.arraycopy(sorted, 0, array, 0, array.length);
+        } finally {
+            executor.shutdown();
+        }
     }
 
     public void sort(MyArrayList<T> myArrayList) {
-        sort(myArrayList.getArray());
+        T[] array = Arrays.copyOf(myArrayList.getArray(), myArrayList.getLength());
+        sort(array);
+        System.arraycopy(array, 0, myArrayList.getArray(), 0, array.length);
     }
 
 
-    private T[] mergeSort(T[] arrayA) {
-        if (arrayA == null) return null;
-        if (arrayA.length < 2) return arrayA;
+    private T[] mergeSort(T[] arrayA, ExecutorService executor) {
+        if (arrayA == null) {
+            return null;
+        } else if (arrayA.length < 2) {
+            return arrayA;
+        } else {
+            int mid = arrayA.length / 2;
+            T[] left = Arrays.copyOfRange(arrayA, 0, mid);
+            T[] right = Arrays.copyOfRange(arrayA, mid, arrayA.length);
 
-        int mid = arrayA.length / 2;
-        T[] arrayB = Arrays.copyOfRange(arrayA, 0, mid);
-        T[] arrayC = Arrays.copyOfRange(arrayA, mid, arrayA.length);
+            Future<T[]> futureLeft = executor.submit(() -> mergeSort(left, executor));
+            Future<T[]> futureRight = executor.submit(() -> mergeSort(right, executor));
 
-        arrayB = mergeSort(arrayB);
-        arrayC = mergeSort(arrayC);
+            try {
+                T[] sortedLeft = futureLeft.get();
+                T[] sortedRight = futureRight.get();
 
-        return mergeArray(arrayB, arrayC);
+                return mergeArray(sortedLeft, sortedRight);
+            } catch (InterruptedException | ExecutionException e) {
+                Thread.currentThread().interrupt();
+                throw new RuntimeException("Ошибка в потоковой сортировке", e);
+            }
+        }
     }
 
     private T[] mergeArray(T[] arrayA, T[] arrayB) {

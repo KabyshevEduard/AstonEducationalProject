@@ -1,4 +1,7 @@
+# IDE
 .idea/
 .vscode/
+
+# Maven
 target/
-src/test/
+*.log

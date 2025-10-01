@@ -1,8 +1,10 @@
 package org.example.sort;
 
-import java.util.Comparator;
-
 import org.example.collection.*;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.concurrent.*;
 
 public class QuickSort<T> implements Sort<T> {
 
@@ -15,19 +17,37 @@ public class QuickSort<T> implements Sort<T> {
     @Override
     public void sort(T[] array) {
         if (array == null || array.length < 2) return;
-        quickSort(array, 0, array.length - 1);
+
+        ExecutorService executor = Executors.newFixedThreadPool(Math.max(2, Runtime.getRuntime().availableProcessors() / 2));
+
+        try {
+            quickSort(array, 0, array.length - 1, executor);
+        } finally {
+            executor.shutdown();
+        }
     }
 
     public void sort(MyArrayList<T> myArrayList) {
-        sort(myArrayList.getArray());
+        T[] array = Arrays.copyOf(myArrayList.getArray(), myArrayList.getLength());
+        sort(array);
+        System.arraycopy(array, 0, myArrayList.getArray(), 0, array.length);
     }
 
-    private void quickSort(T[] array, int low, int high) {
+    private void quickSort(T[] array, int low, int high, ExecutorService executor) {
         if (low >= high) return;
 
         int pivotPos = partition(array, low, high);
-        quickSort(array, low, pivotPos - 1);
-        quickSort(array, pivotPos + 1, high);
+
+        Future<?> left = executor.submit(() -> quickSort(array, low, pivotPos - 1, executor));
+        Future<?> right = executor.submit(() -> quickSort(array, pivotPos + 1, high, executor));
+
+        try {
+            left.get();
+            right.get();
+        } catch (InterruptedException | ExecutionException e) {
+            Thread.currentThread().interrupt();
+            throw new RuntimeException("Ошибка в потоковой сортировке", e);
+        }
     }
 
     private int partition(T[] array, int low, int high) {

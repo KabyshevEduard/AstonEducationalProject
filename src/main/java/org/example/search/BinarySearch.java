@@ -2,6 +2,8 @@ package org.example.search;
 
 import java.util.Comparator;
 
+import org.example.collection.*;
+
 public class BinarySearch<T> {
     private final Comparator<T> comparator;
 
@@ -9,13 +11,13 @@ public class BinarySearch<T> {
         this.comparator = comparator;
     }
 
-    public int search(T[] array, T key) {
+    public int search(T[] array, T needle) {
         int low = 0, high = array.length - 1;
 
         while (low <= high) {
             int mid = (low + high) / 2;
 
-            int result = comparator.compare(array[mid], key);
+            int result = comparator.compare(array[mid], needle);
 
             if (result < 0) {
                 low = mid + 1;
@@ -25,6 +27,10 @@ public class BinarySearch<T> {
                 return mid;
             }
         }
-            return -1;
+        return -1;
+    }
+
+    public int search(MyArrayList<T> arrayList, T needle) {
+        return search(arrayList.toArray(), needle);
     }
 }

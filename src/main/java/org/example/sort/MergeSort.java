@@ -22,9 +22,10 @@ public class MergeSort<T> implements Sort<T> {
     }
 
     public void sort(MyArrayList<T> myArrayList) {
-        sort(myArrayList.getArray());
+        T[] array = Arrays.copyOf(myArrayList.getArray(), myArrayList.getLength());
+        sort(array);
+        System.arraycopy(array, 0, myArrayList.getArray(), 0, myArrayList.getLength());
     }
-
 
     private T[] mergeSort(T[] arrayA) {
         if (arrayA == null) return null;

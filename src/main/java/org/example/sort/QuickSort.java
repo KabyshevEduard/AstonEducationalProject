@@ -1,5 +1,6 @@
 package org.example.sort;
 
+import java.util.Arrays;
 import java.util.Comparator;
 
 import org.example.collection.*;
@@ -19,7 +20,9 @@ public class QuickSort<T> implements Sort<T> {
     }
 
     public void sort(MyArrayList<T> myArrayList) {
-        sort(myArrayList.getArray());
+        T[] array = Arrays.copyOf(myArrayList.getArray(), myArrayList.getLength());
+        sort(array);
+        System.arraycopy(array, 0, myArrayList.getArray(), 0, myArrayList.getLength());
     }
 
     private void quickSort(T[] array, int low, int high) {

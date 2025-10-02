@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d08b4cc-d5c4-43ce-aa9a-25b1e2406bfc" name="Changes" comment="Rename folder">
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/collection/MyArrayListTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/collection/MyArrayListTests.java" afterDir="false" />
+    <list default="true" id="2d08b4cc-d5c4-43ce-aa9a-25b1e2406bfc" name="Changes" comment="Add getArray">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="myLocalMain" />
+        <entry key="$PROJECT_DIR$" value="DoStates" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,6 +39,10 @@
     &quot;url&quot;: &quot;https://github.com/KabyshevEduard/AstonEducationalProject.git&quot;,
     &quot;accountId&quot;: &quot;799b50c3-306a-4603-8cd2-b7ebd0cc87e9&quot;
   }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
 }</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -57,12 +61,12 @@
     "JUnit.MyArrayListTests.CountElementTest.executor": "Run",
     "JUnit.MyArrayListTests.addTest.executor": "Run",
     "JUnit.MyArrayListTests.countElementTest.executor": "Run",
-    "JUnit.MyArrayListTests.executor": "Run",
     "JUnit.MyArrayListTests.getTest.executor": "Run",
     "JUnit.ParseUtilTests.parseFileTest.executor": "Run",
     "JUnit.ParseUtilTests.parseLineTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
@@ -74,16 +78,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="org.example.collection" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.ParseUtilTests.parseFileTest">
+  <component name="RunManager" selected="JUnit.MyArrayListTests.addTest">
     <configuration name="MyArrayListTests.CountElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aston-educational-project" />
-      <option name="PACKAGE_NAME" value="org.example.collection" />
-      <option name="MAIN_CLASS_NAME" value="org.example.collection.MyArrayListTests" />
+      <module name="AstonProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
       <option name="METHOD_NAME" value="CountElementTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -91,9 +90,9 @@
       </method>
     </configuration>
     <configuration name="MyArrayListTests.addTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aston-educational-project" />
-      <option name="PACKAGE_NAME" value="org.example.collection" />
-      <option name="MAIN_CLASS_NAME" value="org.example.collection.MyArrayListTests" />
+      <module name="AstonProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
       <option name="METHOD_NAME" value="addTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -101,9 +100,9 @@
       </method>
     </configuration>
     <configuration name="MyArrayListTests.countElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aston-educational-project" />
-      <option name="PACKAGE_NAME" value="org.example.collection" />
-      <option name="MAIN_CLASS_NAME" value="org.example.collection.MyArrayListTests" />
+      <module name="AstonProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
       <option name="METHOD_NAME" value="countElementTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -111,9 +110,9 @@
       </method>
     </configuration>
     <configuration name="MyArrayListTests.getTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aston-educational-project" />
-      <option name="PACKAGE_NAME" value="org.example.collection" />
-      <option name="MAIN_CLASS_NAME" value="org.example.collection.MyArrayListTests" />
+      <module name="AstonProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
       <option name="METHOD_NAME" value="getTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -121,9 +120,9 @@
       </method>
     </configuration>
     <configuration name="ParseUtilTests.parseFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aston-educational-project" />
-      <option name="PACKAGE_NAME" value="org.example.parser" />
-      <option name="MAIN_CLASS_NAME" value="org.example.parser.ParseUtilTests" />
+      <module name="AstonProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ParseUtilTests" />
       <option name="METHOD_NAME" value="parseFileTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -132,8 +131,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ParseUtilTests.parseFileTest" />
         <item itemvalue="JUnit.MyArrayListTests.addTest" />
+        <item itemvalue="JUnit.ParseUtilTests.parseFileTest" />
         <item itemvalue="JUnit.MyArrayListTests.getTest" />
         <item itemvalue="JUnit.MyArrayListTests.countElementTest" />
         <item itemvalue="JUnit.MyArrayListTests.CountElementTest" />
@@ -156,7 +155,6 @@
       <option name="presentableId" value="Default" />
       <updated>1758714806928</updated>
       <workItem from="1758714807951" duration="24541000" />
-      <workItem from="1759412470351" duration="744000" />
     </task>
     <task id="LOCAL-00001" summary="Base">
       <option name="closed" value="true" />
@@ -198,23 +196,7 @@
       <option name="project" value="LOCAL" />
       <updated>1758894944849</updated>
     </task>
-    <task id="LOCAL-00006" summary="Correct countElements">
-      <option name="closed" value="true" />
-      <created>1759400368781</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1759400368781</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Rename folder">
-      <option name="closed" value="true" />
-      <created>1759415498994</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1759415498994</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,9 +231,6 @@
     <MESSAGE value="Do block 3 without extra tasks&#10;- Add custom class&#10;- Add comparators&#10;- Add parse util" />
     <MESSAGE value="Correct MyList" />
     <MESSAGE value="Add getArray" />
-    <MESSAGE value="Correct countElements" />
-    <MESSAGE value="Add SortExecuter" />
-    <MESSAGE value="Rename folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add getArray" />
   </component>
 </project>

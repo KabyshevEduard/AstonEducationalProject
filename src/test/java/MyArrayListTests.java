@@ -3,13 +3,18 @@ import org.example.collection.MyList;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Comparator;
+
+
 public class MyArrayListTests {
+
+    private Comparator<Integer> comparator = Integer::compareTo;
 
     @Test
     public void countElementTest() {
         MyArrayList<Integer> arr =  new MyArrayList<>(1, 2, 3, 3, 4, 5, 5, 9);
-        long firstCase = arr.countElement(5, 2);
-        long secondCase = arr.countElement(9, 3);
+        long firstCase = arr.countElement(5, 2, comparator);
+        long secondCase = arr.countElement(9, 3, comparator);
         Assert.assertEquals(2L, firstCase);
         Assert.assertEquals(1L, secondCase);
     }

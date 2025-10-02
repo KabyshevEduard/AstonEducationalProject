@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d08b4cc-d5c4-43ce-aa9a-25b1e2406bfc" name="Changes" comment="Add getArray" />
+    <list default="true" id="2d08b4cc-d5c4-43ce-aa9a-25b1e2406bfc" name="Changes" comment="Add getArray">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/collection/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/collection/MyArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/collection/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/collection/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyArrayListTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyArrayListTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +59,7 @@
     "JUnit.MyArrayListTests.CountElementTest.executor": "Run",
     "JUnit.MyArrayListTests.addTest.executor": "Run",
     "JUnit.MyArrayListTests.countElementTest.executor": "Run",
+    "JUnit.MyArrayListTests.executor": "Run",
     "JUnit.MyArrayListTests.getTest.executor": "Run",
     "JUnit.ParseUtilTests.parseFileTest.executor": "Run",
     "JUnit.ParseUtilTests.parseLineTest.executor": "Run",
@@ -124,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyArrayListTests.addTest" />
         <item itemvalue="JUnit.ParseUtilTests.parseFileTest" />
         <item itemvalue="JUnit.MyArrayListTests.getTest" />
         <item itemvalue="JUnit.MyArrayListTests.countElementTest" />
         <item itemvalue="JUnit.MyArrayListTests.CountElementTest" />
+        <item itemvalue="JUnit.MyArrayListTests.addTest" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758894944849</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Correct countElements">
+      <option name="closed" value="true" />
+      <created>1759400368781</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1759400368781</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +237,7 @@
     <MESSAGE value="Do block 3 without extra tasks&#10;- Add custom class&#10;- Add comparators&#10;- Add parse util" />
     <MESSAGE value="Correct MyList" />
     <MESSAGE value="Add getArray" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add getArray" />
+    <MESSAGE value="Correct countElements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct countElements" />
   </component>
 </project>

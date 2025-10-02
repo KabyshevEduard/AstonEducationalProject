@@ -1,6 +1,7 @@
 package org.example.collection;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.concurrent.*;
 import java.util.stream.Stream;
 
@@ -97,12 +98,12 @@ public class MyArrayList<T> implements MyList<T> {
 
     // Extra task 4
     @Override
-    public long countElement(T item, int nThreads) {
+    public long countElement(T item, int nThreads, Comparator<T> comparator) {
         int pivot = (int) round((double) currentSize/nThreads);
         ExecutorService executor = Executors.newFixedThreadPool(nThreads);
         long resultCount = 0L;
         for (int i = 0; i < nThreads; ++i) {
-            Future result = executor.submit(taskCount(i, pivot, item));
+            Future result = executor.submit(taskCount(i, pivot, item, comparator));
             try {
                 resultCount += (long) result.get();
             } catch (InterruptedException | ExecutionException e) {
@@ -121,7 +122,7 @@ public class MyArrayList<T> implements MyList<T> {
         return index >= 0 && index < currentSize;
     }
 
-    private Callable<Long> taskCount(int i, int pivot, T el) {
+    private Callable<Long> taskCount(int i, int pivot, T el, Comparator<T> comparator) {
         return () -> {
             Object[] subArr;
             subArr = Arrays.copyOfRange(bucket, i*pivot, i*pivot + pivot);
@@ -130,7 +131,7 @@ public class MyArrayList<T> implements MyList<T> {
             if (i*pivot + pivot > currentSize) {
                 subArr = Arrays.copyOfRange(bucket, i*pivot, currentSize);
             }
-            Long count = Stream.of(subArr).map(t -> (T) t).filter(el::equals).count();
+            Long count = Stream.of(subArr).map(t -> (T) t).filter(t -> comparator.compare(t, el) == 0).count();
             return count;
         };
     }

@@ -4,6 +4,8 @@ import org.example.collection.MyList;
 
 import java.util.Comparator;
 
+
+
 public class CountSearchStateImp<T> implements CountSearchState<T> {
 
     @Override

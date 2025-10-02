@@ -58,6 +58,7 @@ public class Main {
 
             if (choice == 3) {
                 getCustomEntity(new RandomInputState());
+                System.out.println(myList);
                 pipeline2();
             }
 

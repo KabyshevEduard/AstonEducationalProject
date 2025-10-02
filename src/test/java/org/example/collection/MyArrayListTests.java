@@ -1,5 +1,5 @@
-import org.example.collection.MyArrayList;
-import org.example.collection.MyList;
+package org.example.collection;
+
 import org.junit.Assert;
 import org.junit.Test;
 

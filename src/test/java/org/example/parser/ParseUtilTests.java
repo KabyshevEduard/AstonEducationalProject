@@ -1,3 +1,5 @@
+package org.example.parser;
+
 import org.example.collection.MyList;
 import org.example.models.CustomEntity;
 import org.example.models.parser.ParseUtil;

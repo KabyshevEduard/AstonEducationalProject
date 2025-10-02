@@ -1,5 +1,7 @@
 package org.example.collection;
 
+import java.util.Comparator;
+
 public interface MyList<T> {
 
     void add(T item);
@@ -14,5 +16,5 @@ public interface MyList<T> {
 
     T[] getArray();
 
-    long countElement(T item, int nThreads);
+    long countElement(T item, int nThreads, Comparator<T> comparator);
 }

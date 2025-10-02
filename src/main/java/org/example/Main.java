@@ -1,7 +1,9 @@
 package org.example;
 
+import org.example.collection.MyArrayList;
 import org.example.collection.MyList;
 import org.example.models.CustomEntity;
+import org.example.models.Person;
 import org.example.models.comparators.AgeComparator;
 import org.example.models.comparators.NameComparator;
 import org.example.models.comparators.SurnameComparator;
@@ -31,6 +33,7 @@ public class Main {
 
 
     public static void main(String[] args) {
+
         while (true) {
             System.out.println("Выберите действие");
             System.out.println("1. Ввести массив\n2. Выбрать файл с массивом\n3. Случайно инициализировать массив\n4. Выход\n5. Дополнительное задание: осториторовать по четным и нечетным");
@@ -59,7 +62,7 @@ public class Main {
             }
 
             if (choice == 5) {
-
+                // State
             }
         }
     }
@@ -106,7 +109,7 @@ public class Main {
         myList = firstStageExecuter.executeStates(myList);
 
         try {
-            secondStageExecuter.executeStates(myList, el);
+            secondStageExecuter.executeStates(myList, el, comparator);
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }

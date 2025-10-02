@@ -10,7 +10,7 @@ public class SortStateImp<T> implements SortState<T> {
     @Override
     public MyList<T> execute(MyList<T> list) {
         // doSort(list);
-        return null;
+        return list;
     }
 
     private MyList<T> doSort(MyList<T> list) {

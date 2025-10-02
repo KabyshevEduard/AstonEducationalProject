@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d08b4cc-d5c4-43ce-aa9a-25b1e2406bfc" name="Changes" comment="Add getArray">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/collection/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/collection/MyArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/collection/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/collection/MyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MyArrayListTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyArrayListTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="2d08b4cc-d5c4-43ce-aa9a-25b1e2406bfc" name="Changes" comment="Add getArray" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Correct-Validators" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,7 +62,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "myLocalMain",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,7 +72,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.MyArrayListTests.addTest">
     <configuration name="MyArrayListTests.CountElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AstonProject" />
       <option name="PACKAGE_NAME" value="" />
@@ -238,6 +234,7 @@
     <MESSAGE value="Correct MyList" />
     <MESSAGE value="Add getArray" />
     <MESSAGE value="Correct countElements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correct countElements" />
+    <MESSAGE value="Add SortExecuter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add SortExecuter" />
   </component>
 </project>

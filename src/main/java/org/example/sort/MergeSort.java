@@ -29,6 +29,7 @@ public class MergeSort<T> implements Sort<T> {
         }
     }
 
+    @Override
     public void sort(MyList<T> myList) {
         T[] array = Arrays.copyOf(myList.getArray(), myList.getLength());
         sort(array);

@@ -78,6 +78,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.collection" />
+    </key>
+  </component>
   <component name="RunManager" selected="JUnit.MyArrayListTests.addTest">
     <configuration name="MyArrayListTests.CountElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aston-educational-project" />

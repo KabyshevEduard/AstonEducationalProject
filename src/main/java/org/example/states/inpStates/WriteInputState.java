@@ -3,7 +3,7 @@ package org.example.states.inpStates;
 import org.example.collection.MyArrayList;
 import org.example.collection.MyList;
 import org.example.models.CustomEntity;
-import org.example.models.parser.ParseUtil;
+import org.example.models.parserr.ParseUtil;
 
 import java.util.Scanner;
 

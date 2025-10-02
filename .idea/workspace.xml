@@ -55,34 +55,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.MyArrayListTests.CountElementTest.executor": "Run",
-    "JUnit.MyArrayListTests.addTest.executor": "Run",
-    "JUnit.MyArrayListTests.countElementTest.executor": "Run",
-    "JUnit.MyArrayListTests.executor": "Run",
-    "JUnit.MyArrayListTests.getTest.executor": "Run",
-    "JUnit.ParseUtilTests.parseFileTest.executor": "Run",
-    "JUnit.ParseUtilTests.parseLineTest.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "myLocalMain",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/eduardkabyshev/Desktop/AstonProject/src/main/java/org/example/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyArrayListTests.CountElementTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyArrayListTests.addTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyArrayListTests.countElementTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyArrayListTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyArrayListTests.getTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParseUtilTests.parseFileTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParseUtilTests.parseLineTest.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;myLocalMain&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/eduardkabyshev/Desktop/AstonProject/src/main/java/org/example/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.MyArrayListTests.addTest">
     <configuration name="MyArrayListTests.CountElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AstonProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
+      <module name="aston-educational-project" />
+      <option name="PACKAGE_NAME" value="org.example.collection" />
+      <option name="MAIN_CLASS_NAME" value="org.example.collection.MyArrayListTests" />
       <option name="METHOD_NAME" value="CountElementTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -90,9 +90,9 @@
       </method>
     </configuration>
     <configuration name="MyArrayListTests.addTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AstonProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
+      <module name="aston-educational-project" />
+      <option name="PACKAGE_NAME" value="org.example.collection" />
+      <option name="MAIN_CLASS_NAME" value="org.example.collection.MyArrayListTests" />
       <option name="METHOD_NAME" value="addTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -100,9 +100,9 @@
       </method>
     </configuration>
     <configuration name="MyArrayListTests.countElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AstonProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
+      <module name="aston-educational-project" />
+      <option name="PACKAGE_NAME" value="org.example.collection" />
+      <option name="MAIN_CLASS_NAME" value="org.example.collection.MyArrayListTests" />
       <option name="METHOD_NAME" value="countElementTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -110,9 +110,9 @@
       </method>
     </configuration>
     <configuration name="MyArrayListTests.getTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AstonProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
+      <module name="aston-educational-project" />
+      <option name="PACKAGE_NAME" value="org.example.collection" />
+      <option name="MAIN_CLASS_NAME" value="org.example.collection.MyArrayListTests" />
       <option name="METHOD_NAME" value="getTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -120,9 +120,9 @@
       </method>
     </configuration>
     <configuration name="ParseUtilTests.parseFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AstonProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ParseUtilTests" />
+      <module name="aston-educational-project" />
+      <option name="PACKAGE_NAME" value="org.example.parser" />
+      <option name="MAIN_CLASS_NAME" value="org.example.parser.ParseUtilTests" />
       <option name="METHOD_NAME" value="parseFileTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">

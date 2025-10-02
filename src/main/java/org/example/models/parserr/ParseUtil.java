@@ -3,6 +3,7 @@ package org.example.models.parserr;
 import org.example.collection.MyArrayList;
 import org.example.collection.MyList;
 import org.example.models.CustomEntity;
+import org.example.models.Person;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

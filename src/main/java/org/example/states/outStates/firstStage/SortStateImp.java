@@ -1,5 +1,6 @@
 package org.example.states.outStates.firstStage;
 
+import org.example.collection.MyArrayList;
 import org.example.collection.MyList;
 import org.example.sort.MergeSort;
 import org.example.sort.QuickSort;
@@ -15,16 +16,16 @@ public class SortStateImp<T> implements SortState<T> {
 
     @Override
     public MyList<T> execute(MyList<T> list, Comparator<T> comparator) {
+        MyList<T> listCopy = new MyArrayList<T>(list.toArray());
         Random random = new Random();
         int choice = random.nextDouble() >= 0.5 ? 1 : 0;
         if (choice == 0) {
             sortExecuter.setSorter(new MergeSort<T>(comparator));
-            sortExecuter.executeSort(list);
+            sortExecuter.executeSort(listCopy);
         } else {
             sortExecuter.setSorter(new QuickSort<T>(comparator));
-            sortExecuter.executeSort(list);
+            sortExecuter.executeSort(listCopy);
         }
-        System.out.println("Сортировка...");
-        return list;
+        return listCopy;
     }
 }

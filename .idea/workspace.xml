@@ -27,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Correct-Validators" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,30 +55,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MyArrayListTests.CountElementTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MyArrayListTests.addTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MyArrayListTests.countElementTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MyArrayListTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MyArrayListTests.getTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ParseUtilTests.parseFileTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ParseUtilTests.parseLineTest.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/eduardkabyshev/Desktop/AstonProject/src/main/java/org/example/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.MyArrayListTests.CountElementTest.executor": "Run",
+    "JUnit.MyArrayListTests.addTest.executor": "Run",
+    "JUnit.MyArrayListTests.countElementTest.executor": "Run",
+    "JUnit.MyArrayListTests.executor": "Run",
+    "JUnit.MyArrayListTests.getTest.executor": "Run",
+    "JUnit.ParseUtilTests.parseFileTest.executor": "Run",
+    "JUnit.ParseUtilTests.parseLineTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/eduardkabyshev/Desktop/AstonProject/src/main/java/org/example/Main.java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.MyArrayListTests.addTest">
+}]]></component>
+  <component name="RunManager">
     <configuration name="MyArrayListTests.CountElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AstonProject" />
       <option name="PACKAGE_NAME" value="" />
@@ -241,6 +241,7 @@
     <MESSAGE value="Correct MyList" />
     <MESSAGE value="Add getArray" />
     <MESSAGE value="Correct countElements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correct countElements" />
+    <MESSAGE value="Add SortExecuter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add SortExecuter" />
   </component>
 </project>

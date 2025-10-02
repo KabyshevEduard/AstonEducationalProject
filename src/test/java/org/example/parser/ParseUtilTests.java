@@ -2,7 +2,7 @@ package org.example.parser;
 
 import org.example.collection.MyList;
 import org.example.models.CustomEntity;
-import org.example.models.parser.ParseUtil;
+import org.example.models.parserr.ParseUtil;
 import org.junit.Assert;
 import org.junit.Test;
 

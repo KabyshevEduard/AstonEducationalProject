@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d08b4cc-d5c4-43ce-aa9a-25b1e2406bfc" name="Changes" comment="Add getArray" />
+    <list default="true" id="2d08b4cc-d5c4-43ce-aa9a-25b1e2406bfc" name="Changes" comment="Add getArray">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sort/SortExecuter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sort/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sort/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sort/Sort.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,6 +78,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.collection" />
+    </key>
+  </component>
   <component name="RunManager" selected="JUnit.MyArrayListTests.addTest">
     <configuration name="MyArrayListTests.CountElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aston-educational-project" />
@@ -149,6 +160,7 @@
       <option name="presentableId" value="Default" />
       <updated>1758714806928</updated>
       <workItem from="1758714807951" duration="24541000" />
+      <workItem from="1759412470351" duration="744000" />
     </task>
     <task id="LOCAL-00001" summary="Base">
       <option name="closed" value="true" />

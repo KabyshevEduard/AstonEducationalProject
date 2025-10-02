@@ -16,5 +16,7 @@ public interface MyList<T> {
 
     T[] getArray();
 
+    public T[] toArray();
+
     long countElement(T item, int nThreads, Comparator<T> comparator);
 }

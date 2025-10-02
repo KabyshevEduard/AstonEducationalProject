@@ -78,12 +78,11 @@ public class MyArrayList<T> implements MyList<T> {
             for (int i = 0; i < oldBucket.length; ++i) {
                 bucket[i] = oldBucket[i];
             }
-            for (int i = oldBucket.length; i < oldBucket.length + items.length; ++i ) {
+            for (int i = oldBucket.length; i < oldBucket.length + items.length; ++i) {
                 bucket[i] = items[i - oldBucket.length];
             }
             currentSize = oldBucket.length + items.length;
-        }
-        else {
+        } else {
             for (int i = currentSize; i < currentSize + items.length; ++i) {
                 bucket[i] = items[i - currentSize];
             }
@@ -91,9 +90,16 @@ public class MyArrayList<T> implements MyList<T> {
         }
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public T[] getArray() {
         return (T[]) bucket;
+    }
+
+    @SuppressWarnings("unchecked")
+    @Override
+    public T[] toArray() {
+        return (T[]) Arrays.copyOf(bucket, currentSize, bucket.getClass());
     }
 
     // Extra task 4
@@ -125,11 +131,11 @@ public class MyArrayList<T> implements MyList<T> {
     private Callable<Long> taskCount(int i, int pivot, T el, Comparator<T> comparator) {
         return () -> {
             Object[] subArr;
-            subArr = Arrays.copyOfRange(bucket, i*pivot, i*pivot + pivot);
+            subArr = Arrays.copyOfRange(bucket, i * pivot, i * pivot + pivot);
 
             // Boundary condition
-            if (i*pivot + pivot > currentSize) {
-                subArr = Arrays.copyOfRange(bucket, i*pivot, currentSize);
+            if (i * pivot + pivot > currentSize) {
+                subArr = Arrays.copyOfRange(bucket, i * pivot, currentSize);
             }
             Long count = Stream.of(subArr).map(t -> (T) t).filter(t -> comparator.compare(t, el) == 0).count();
             return count;

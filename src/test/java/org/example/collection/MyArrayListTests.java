@@ -1,8 +1,7 @@
-import org.example.collection.MyArrayList;
-import org.example.collection.MyList;
-import org.junit.Assert;
-import org.junit.Test;
+package org.example.collection;
 
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 import java.util.Comparator;
 
 
@@ -15,8 +14,8 @@ public class MyArrayListTests {
         MyArrayList<Integer> arr =  new MyArrayList<>(1, 2, 3, 3, 4, 5, 5, 9);
         long firstCase = arr.countElement(5, 2, comparator);
         long secondCase = arr.countElement(9, 3, comparator);
-        Assert.assertEquals(2L, firstCase);
-        Assert.assertEquals(1L, secondCase);
+        assertEquals(2L, firstCase);
+        assertEquals(1L, secondCase);
     }
 
     @Test
@@ -24,13 +23,13 @@ public class MyArrayListTests {
         MyList<Integer> arr = new MyArrayList<>(1, 2, 3);
         arr.add(4);
         int el = arr.get(3);
-        Assert.assertEquals(4, el);
+        assertEquals(4, el);
     }
 
     @Test
     public void getTest() {
         MyList<Integer> arr = new MyArrayList<>(1, 2, 3);
         int el = arr.get(2);
-        Assert.assertEquals(3, el);
+        assertEquals(3, el);
     }
 }

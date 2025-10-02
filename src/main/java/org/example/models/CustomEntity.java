@@ -43,7 +43,7 @@ public abstract class CustomEntity {
             return this;
         }
 
-        public  CustomEntity.Builder name(String name) throws IllegalArgumentException {
+        public CustomEntity.Builder name(String name) throws IllegalArgumentException {
             if (name == null || name.length() < 3 || name.length() > 50) {
                 throw new IllegalArgumentException("Невалидное имя");
             }
@@ -51,7 +51,7 @@ public abstract class CustomEntity {
             return this;
         }
 
-        public  CustomEntity.Builder surname(String surname) throws IllegalArgumentException {
+        public CustomEntity.Builder surname(String surname) throws IllegalArgumentException {
             if (surname == null || surname.length() < 3 || surname.length() > 50) {
                 throw new IllegalArgumentException("Невалидная фамилия");
             }
@@ -59,7 +59,7 @@ public abstract class CustomEntity {
             return this;
         }
 
-        public  CustomEntity.Builder age(int age) throws IllegalArgumentException {
+        public CustomEntity.Builder age(int age) throws IllegalArgumentException {
             if (age < 0 || age > 108) {
                 throw new IllegalArgumentException("Возраст должен быть настоящим");
             }
@@ -70,7 +70,9 @@ public abstract class CustomEntity {
         public CustomEntity build() {
             return new CustomEntity(this) {
             };
-        };
+        }
+
+        ;
     }
 
     @Override

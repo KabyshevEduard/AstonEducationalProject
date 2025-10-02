@@ -2,6 +2,8 @@ package org.example.sort;
 
 import org.example.collection.MyList;
 
+import java.util.Comparator;
+
 public class SortExecuter<T> {
 
     private Sort<T> sorter;

@@ -63,7 +63,7 @@ public class Main {
             }
 
             if (choice == 5) {
-                // State
+                break;
             }
         }
     }
@@ -107,7 +107,7 @@ public class Main {
                 new WriteStateImp<CustomEntity>(),
                 new CountSearchStateImp<CustomEntity>()
         );
-        myList = firstStageExecuter.executeStates(myList);
+        myList = firstStageExecuter.executeStates(myList, comparator);
 
         try {
             secondStageExecuter.executeStates(myList, el, comparator);

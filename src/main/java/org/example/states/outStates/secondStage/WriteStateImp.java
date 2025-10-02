@@ -14,7 +14,7 @@ public class WriteStateImp<T> implements WriteState<T> {
 
     private void writeIntoFile(String path, MyList<T> list) throws IOException {
         FileWriter fw = new FileWriter(path, true);
-        fw.write(list.toString());
+        fw.write(list.toString() + "\n");
         fw.flush();
         fw.close();
         System.out.println("Массив записан");

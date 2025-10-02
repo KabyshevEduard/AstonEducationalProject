@@ -2,6 +2,8 @@ package org.example.states.outStates.firstStage;
 
 import org.example.collection.MyList;
 
+import java.util.Comparator;
+
 
 public class FirstStageExecuter<T> {
 
@@ -11,7 +13,7 @@ public class FirstStageExecuter<T> {
         this.sortState = sortState;
     }
 
-    public MyList<T> executeStates(MyList<T> list) {
-        return this.sortState.execute(list);
+    public MyList<T> executeStates(MyList<T> list, Comparator<T> comparator) {
+        return this.sortState.execute(list, comparator);
     }
 }

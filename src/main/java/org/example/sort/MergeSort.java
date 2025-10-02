@@ -22,7 +22,7 @@ public class MergeSort<T> implements Sort<T> {
         ExecutorService executor = Executors.newFixedThreadPool(Math.max(2, Runtime.getRuntime().availableProcessors() / 2));
 
         try {
-            T[] sorted = mergeSort(array, executor);
+            T[] sorted = mergeSort(array, executor, 0);
             System.arraycopy(sorted, 0, array, 0, array.length);
         } finally {
             executor.shutdown();
@@ -45,7 +45,7 @@ public class MergeSort<T> implements Sort<T> {
         ExecutorService executor = Executors.newFixedThreadPool(Math.max(2, Runtime.getRuntime().availableProcessors() / 2));
 
         try {
-            T[] sortedEvens = mergeSort(evenElements, executor);
+            T[] sortedEvens = mergeSort(evenElements, executor, 0);
             int evenIndex = 0;
 
             for (int i = 0; i < array.length; i++) {
@@ -66,8 +66,9 @@ public class MergeSort<T> implements Sort<T> {
 
     @SuppressWarnings("unchecked")
     private T[] getEvenElements(T[] array, ToIntFunction<T> numericField) {
-        T[] evenElements = (T[]) new Object[array.length];
-        
+        T[] evenElements = (T[]) java.lang.reflect.Array.newInstance(
+                array.getClass().getComponentType(), array.length);
+
         int count = 0;
 
         for (T element : array) {
@@ -77,11 +78,11 @@ public class MergeSort<T> implements Sort<T> {
         }
 
         evenElements = Arrays.copyOf(evenElements, count);
-        
+
         return evenElements;
     }
 
-    private T[] mergeSort(T[] arrayA, ExecutorService executor) {
+    private T[] mergeSort(T[] arrayA, ExecutorService executor, int depth) {
         if (arrayA == null) {
             return null;
         } else if (arrayA.length < 2) {
@@ -91,24 +92,32 @@ public class MergeSort<T> implements Sort<T> {
             T[] left = Arrays.copyOfRange(arrayA, 0, mid);
             T[] right = Arrays.copyOfRange(arrayA, mid, arrayA.length);
 
-            Future<T[]> futureLeft = executor.submit(() -> mergeSort(left, executor));
-            Future<T[]> futureRight = executor.submit(() -> mergeSort(right, executor));
+            // Используем многопоточность только для больших массивов и на верхних уровнях рекурсии
+            if (depth < 2 && arrayA.length > 1000) {
+                Future<T[]> futureLeft = executor.submit(() -> mergeSort(left, executor, depth + 1));
+                Future<T[]> futureRight = executor.submit(() -> mergeSort(right, executor, depth + 1));
 
-            try {
-                T[] sortedLeft = futureLeft.get();
-                T[] sortedRight = futureRight.get();
-
+                try {
+                    T[] sortedLeft = futureLeft.get();
+                    T[] sortedRight = futureRight.get();
+                    return mergeArray(sortedLeft, sortedRight);
+                } catch (InterruptedException | ExecutionException e) {
+                    Thread.currentThread().interrupt();
+                    throw new RuntimeException("Ошибка в потоковой сортировке", e);
+                }
+            } else {
+                // Синхронная сортировка для маленьких массивов
+                T[] sortedLeft = mergeSort(left, executor, depth + 1);
+                T[] sortedRight = mergeSort(right, executor, depth + 1);
                 return mergeArray(sortedLeft, sortedRight);
-            } catch (InterruptedException | ExecutionException e) {
-                Thread.currentThread().interrupt();
-                throw new RuntimeException("Ошибка в потоковой сортировке", e);
             }
         }
     }
 
+    @SuppressWarnings("unchecked")
     private T[] mergeArray(T[] arrayA, T[] arrayB) {
-        @SuppressWarnings("unchecked")
-        T[] arrayC = (T[]) new Object[arrayA.length + arrayB.length];
+        T[] arrayC = (T[]) java.lang.reflect.Array.newInstance(
+                arrayA.getClass().getComponentType(), arrayA.length + arrayB.length);
         int positionA = 0, positionB = 0, index = 0;
 
         while (positionA < arrayA.length && positionB < arrayB.length) {

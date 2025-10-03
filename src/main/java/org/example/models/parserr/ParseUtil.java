@@ -20,7 +20,8 @@ public class ParseUtil {
     // Parse txt file to list of objects
     public static MyList<CustomEntity> fileInput(String pathFile) throws FileNotFoundException {
         BufferedReader br = new BufferedReader(new FileReader(pathFile));
-        int n = (int) br.lines().count();
+        BufferedReader br1 = new BufferedReader(new FileReader(pathFile));
+        int n = (int) br1.lines().count();
 
         // Extra task 3 (Add elements to custom collection by stream)
         MyList<CustomEntity> arr = new MyArrayList<CustomEntity>(n);

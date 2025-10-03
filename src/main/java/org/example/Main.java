@@ -7,8 +7,10 @@ import org.example.models.Person;
 import org.example.models.comparators.AgeComparator;
 import org.example.models.comparators.NameComparator;
 import org.example.models.comparators.SurnameComparator;
+import org.example.models.parserr.ParseUtil;
 import org.example.states.inpStates.*;
 import org.example.states.outStates.ExitState;
+import org.example.states.outStates.ExtraFirstState;
 import org.example.states.outStates.firstStage.FirstStageExecuter;
 import org.example.states.outStates.firstStage.SortStateImp;
 import org.example.states.outStates.secondStage.CountSearchStateImp;
@@ -28,6 +30,7 @@ public class Main {
     private static final Comparator<CustomEntity> comparator = new NameComparator()
             .thenComparing(new SurnameComparator())
             .thenComparing(new AgeComparator());
+    private static final ExtraFirstState<CustomEntity> extraFirstState = new ExtraFirstState<>(new AgeComparator());
     private static final ExitState exitState = new ExitState();
     private static MyList<CustomEntity> myList;
 
@@ -35,11 +38,21 @@ public class Main {
     public static void main(String[] args) {
 
         while (true) {
-            System.out.println("Выберите действие");
-            System.out.println("1. Ввести массив\n2. Выбрать файл с массивом\n3. Случайно инициализировать массив\n4. Выход\n5. Дополнительное задание: осториторовать по четным и нечетным");
-            System.out.print("Действие: ");
-            Scanner scanner = new Scanner(System.in);
-            int choice = scanner.nextInt();
+
+            Integer choice = null;
+            actionChoice:
+            while (choice == null) {
+                try {
+                    System.out.println("Выберите действие");
+                    System.out.println("1. Ввести массив\n2. Выбрать файл с массивом\n3. Случайно инициализировать массив\n4. Выход\n5. Дополнительное задание: остортировать по четным и нечетным\n");
+                    System.out.print("Действие: ");
+                    Scanner scanner = new Scanner(System.in);
+                    choice = scanner.nextInt();
+                    break actionChoice;
+                } catch (InputMismatchException e) {
+                    continue actionChoice;
+                }
+            }
 
             if (choice == 4) {
                 exitState.exit();
@@ -63,7 +76,20 @@ public class Main {
             }
 
             if (choice == 5) {
-                break;
+                System.out.println("Выберите как инициализировать массив:");
+                System.out.println("1. Ввести\n2. Выбрать файл\n3. Случайно");
+                Scanner sc = new Scanner(System.in);
+                int choice1 = sc.nextInt();
+                if (choice1 == 1) {
+                    getCustomEntity(new WriteInputState());
+                }
+                if (choice1 == 2) {
+                    getCustomEntity(new FileInputState());
+                }
+                if (choice1 == 3) {
+                    getCustomEntity(new RandomInputState());
+                }
+                extraFirstState.execute(myList, CustomEntity::getAge);
             }
         }
     }

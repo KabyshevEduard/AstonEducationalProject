@@ -17,6 +17,7 @@ public class WriteStateImp<T> implements WriteState<T> {
         fw.write(list.toString() + "\n");
         fw.flush();
         fw.close();
+        System.out.println();
         System.out.println("Массив записан");
     }
 }

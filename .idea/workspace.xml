@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d08b4cc-d5c4-43ce-aa9a-25b1e2406bfc" name="Changes" comment="Correct errors">
+    <list default="true" id="2d08b4cc-d5c4-43ce-aa9a-25b1e2406bfc" name="Changes" comment="Correct bug">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/ExtraFirstState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/parserr/ParseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/parserr/ParseUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/firstStage/SortStateImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/firstStage/SortStateImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sort/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sort/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sort/SortExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sort/SortExecuter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/CountSearchStateImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/CountSearchStateImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/WriteStateImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/WriteStateImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759428480728</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Correct bug">
+      <option name="closed" value="true" />
+      <created>1759436302846</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1759436302846</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +304,7 @@
     <MESSAGE value="Add getArray" />
     <MESSAGE value="Correct packages" />
     <MESSAGE value="Correct errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correct errors" />
+    <MESSAGE value="Correct bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct bug" />
   </component>
 </project>

@@ -18,6 +18,7 @@ public class CountSearchStateImp<T> implements CountSearchState<T> {
 
         int index = binarySearch.search(list, element);
         System.out.println("Индекс элемента: " + index);
+        System.out.println();
 
         return index;
     }

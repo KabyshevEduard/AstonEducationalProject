@@ -1,9 +1,6 @@
 package project.search;
 
-import org.example.collection.*;
-import org.example.models.*;
-import org.example.models.comparators.*;
-import org.example.sort.*;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import project.collection.MyArrayList;

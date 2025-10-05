@@ -4,16 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d08b4cc-d5c4-43ce-aa9a-25b1e2406bfc" name="Changes" comment="Correct bug">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/ExtraFirstState.java" afterDir="false" />
+    <list default="true" id="2d08b4cc-d5c4-43ce-aa9a-25b1e2406bfc" name="Changes" comment="Merge branch 'DoStates'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/parserr/ParseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/parserr/ParseUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sort/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sort/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sort/SortExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sort/SortExecuter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/CountSearchStateImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/CountSearchStateImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/WriteStateImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/WriteStateImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Array.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/collection/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/collection/MyArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/collection/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/collection/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dataInput/ExitState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dataInput/FirstStageExecutor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dataInput/SortState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dataInput/SortStateImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/CustomEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/models/CustomEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/models/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/comparators/AgeComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/models/comparators/AgeComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/comparators/NameComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/models/comparators/NameComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/comparators/SurnameComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/models/comparators/SurnameComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/parserr/ParseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/models/parserr/ParseUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/search/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/sort/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/sort/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/sort/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sort/SortExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/sort/SortExecuter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/inpStates/EntityInputState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/states/inpStates/EntityInputState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/inpStates/FileInputState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/states/inpStates/FileInputState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/inpStates/InputState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/states/inpStates/InputState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/inpStates/InputStateExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/states/inpStates/InputStateExecuter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/inpStates/RandomInputState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/states/inpStates/RandomInputState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/inpStates/WriteInputState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/states/inpStates/WriteInputState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/ExitState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/states/outStates/ExitState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/ExtraFirstState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/states/outStates/ExtraFirstState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/firstStage/FirstStageExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/states/outStates/firstStage/FirstStageExecuter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/firstStage/SortState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/states/outStates/firstStage/SortState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/firstStage/SortStateImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/states/outStates/firstStage/SortStateImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/CountSearchState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/states/outStates/secondStage/CountSearchState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/CountSearchStateImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/states/outStates/secondStage/CountSearchStateImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/SecondStageExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/states/outStates/secondStage/SecondStageExecuter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/WriteState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/states/outStates/secondStage/WriteState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/WriteStateImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/states/outStates/secondStage/WriteStateImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/collection/MyArrayListTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/collection/MyArrayListTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/parser/ParseUtilTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/parser/ParseUtilTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/search/BinarySearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/search/BinarySearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/sort/MergeSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/sort/MergeSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/sort/QuickSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/sort/QuickSortTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +74,12 @@
     &quot;assignee&quot;: &quot;KabyshevEduard&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/KabyshevEduard/AstonEducationalProject.git",
-    "accountId": "72f8b8cf-f70f-4b36-aea8-fa0e2486de06"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/KabyshevEduard/AstonEducationalProject.git&quot;,
+    &quot;accountId&quot;: &quot;72f8b8cf-f70f-4b36-aea8-fa0e2486de06&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -63,39 +95,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.BinarySearchTest.executor": "Run",
-    "JUnit.BinarySearchTest.testSearchByAge.executor": "Run",
-    "JUnit.BinarySearchTest.testSearchByName.executor": "Run",
-    "JUnit.BinarySearchTest.testSearchBySurname.executor": "Run",
-    "JUnit.BinarySearchTest.testSearchEmptyArray.executor": "Run",
-    "JUnit.BinarySearchTest.testSearchSingleElement.executor": "Run",
-    "JUnit.MergeSortTest.testSortByAge.executor": "Run",
-    "JUnit.MergeSortTest.testSortBySurname.executor": "Run",
-    "JUnit.MergeSortTest.testSortEvenByAge.executor": "Run",
-    "JUnit.MyArrayListTests.CountElementTest.executor": "Run",
-    "JUnit.MyArrayListTests.addTest.executor": "Run",
-    "JUnit.MyArrayListTests.countElementTest.executor": "Run",
-    "JUnit.MyArrayListTests.getTest.executor": "Run",
-    "JUnit.ParseUtilTests.parseFileTest.executor": "Run",
-    "JUnit.ParseUtilTests.parseLineTest.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/eduardkabyshev/Desktop/AstonProject/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BinarySearchTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BinarySearchTest.testSearchByAge.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BinarySearchTest.testSearchByName.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BinarySearchTest.testSearchBySurname.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BinarySearchTest.testSearchEmptyArray.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BinarySearchTest.testSearchSingleElement.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MergeSortTest.testSortByAge.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MergeSortTest.testSortBySurname.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MergeSortTest.testSortEvenByAge.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyArrayListTests.CountElementTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyArrayListTests.addTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyArrayListTests.countElementTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyArrayListTests.getTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParseUtilTests.parseFileTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParseUtilTests.parseLineTest.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/eduardkabyshev/Desktop/AstonProject/src/main/java/org/example/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="BinarySearchTest.testSearchByAge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aston-educational-project" />

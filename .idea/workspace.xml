@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d08b4cc-d5c4-43ce-aa9a-25b1e2406bfc" name="Changes" comment="Add getArray">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2d08b4cc-d5c4-43ce-aa9a-25b1e2406bfc" name="Changes" comment="Correct bug">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/ExtraFirstState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/parserr/ParseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/parserr/ParseUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sort/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sort/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sort/SortExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sort/SortExecuter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/CountSearchStateImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/CountSearchStateImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/WriteStateImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/states/outStates/secondStage/WriteStateImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +66,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.BinarySearchTest.executor": "Run",
+    "JUnit.BinarySearchTest.testSearchByAge.executor": "Run",
+    "JUnit.BinarySearchTest.testSearchByName.executor": "Run",
+    "JUnit.BinarySearchTest.testSearchBySurname.executor": "Run",
+    "JUnit.BinarySearchTest.testSearchEmptyArray.executor": "Run",
+    "JUnit.BinarySearchTest.testSearchSingleElement.executor": "Run",
+    "JUnit.MergeSortTest.testSortByAge.executor": "Run",
+    "JUnit.MergeSortTest.testSortBySurname.executor": "Run",
+    "JUnit.MergeSortTest.testSortEvenByAge.executor": "Run",
     "JUnit.MyArrayListTests.CountElementTest.executor": "Run",
     "JUnit.MyArrayListTests.addTest.executor": "Run",
     "JUnit.MyArrayListTests.countElementTest.executor": "Run",
@@ -69,8 +85,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "MaxSortBranch",
-    "kotlin-language-version-configured": "true",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -81,52 +96,82 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.MyArrayListTests.addTest">
-    <configuration name="MyArrayListTests.CountElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AstonProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
-      <option name="METHOD_NAME" value="CountElementTest" />
+  <component name="RunManager">
+    <configuration name="BinarySearchTest.testSearchByAge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aston-educational-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.search" />
+      <option name="MAIN_CLASS_NAME" value="org.example.search.BinarySearchTest" />
+      <option name="METHOD_NAME" value="testSearchByAge" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyArrayListTests.addTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AstonProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
-      <option name="METHOD_NAME" value="addTest" />
+    <configuration name="BinarySearchTest.testSearchByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aston-educational-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.search" />
+      <option name="MAIN_CLASS_NAME" value="org.example.search.BinarySearchTest" />
+      <option name="METHOD_NAME" value="testSearchByName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyArrayListTests.countElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AstonProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
-      <option name="METHOD_NAME" value="countElementTest" />
+    <configuration name="BinarySearchTest.testSearchBySurname" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aston-educational-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.search" />
+      <option name="MAIN_CLASS_NAME" value="org.example.search.BinarySearchTest" />
+      <option name="METHOD_NAME" value="testSearchBySurname" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyArrayListTests.getTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AstonProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTests" />
-      <option name="METHOD_NAME" value="getTest" />
+    <configuration name="BinarySearchTest.testSearchEmptyArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aston-educational-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.search" />
+      <option name="MAIN_CLASS_NAME" value="org.example.search.BinarySearchTest" />
+      <option name="METHOD_NAME" value="testSearchEmptyArray" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParseUtilTests.parseFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AstonProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ParseUtilTests" />
-      <option name="METHOD_NAME" value="parseFileTest" />
+    <configuration name="BinarySearchTest.testSearchSingleElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aston-educational-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.search" />
+      <option name="MAIN_CLASS_NAME" value="org.example.search.BinarySearchTest" />
+      <option name="METHOD_NAME" value="testSearchSingleElement" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyArrayListTests.addTest" />
-        <item itemvalue="JUnit.ParseUtilTests.parseFileTest" />
-        <item itemvalue="JUnit.MyArrayListTests.getTest" />
-        <item itemvalue="JUnit.MyArrayListTests.countElementTest" />
-        <item itemvalue="JUnit.MyArrayListTests.CountElementTest" />
+        <item itemvalue="JUnit.BinarySearchTest.testSearchSingleElement" />
+        <item itemvalue="JUnit.BinarySearchTest.testSearchEmptyArray" />
+        <item itemvalue="JUnit.BinarySearchTest.testSearchByAge" />
+        <item itemvalue="JUnit.BinarySearchTest.testSearchBySurname" />
+        <item itemvalue="JUnit.BinarySearchTest.testSearchByName" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +237,31 @@
       <option name="project" value="LOCAL" />
       <updated>1758894944849</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Correct packages">
+      <option name="closed" value="true" />
+      <created>1759418066690</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1759418066690</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Correct errors">
+      <option name="closed" value="true" />
+      <created>1759428480728</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1759428480728</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Correct bug">
+      <option name="closed" value="true" />
+      <created>1759436302846</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1759436302846</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +327,9 @@
     <MESSAGE value="Do block 3 without extra tasks&#10;- Add custom class&#10;- Add comparators&#10;- Add parse util" />
     <MESSAGE value="Correct MyList" />
     <MESSAGE value="Add getArray" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add getArray" />
+    <MESSAGE value="Correct packages" />
+    <MESSAGE value="Correct errors" />
+    <MESSAGE value="Correct bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct bug" />
   </component>
 </project>

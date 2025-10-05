@@ -137,7 +137,7 @@ public class MyArrayList<T> implements MyList<T> {
             if (i * pivot + pivot > currentSize) {
                 subArr = Arrays.copyOfRange(bucket, i * pivot, currentSize);
             }
-            Long count = Stream.of(subArr).map(t -> (T) t).filter(t -> comparator.compare(t, el) == 0).count();
+            Long count = Stream.of(subArr).map(t -> (T) t).filter(t -> comparator.compare(el, t) == 0).count();
             return count;
         };
     }
